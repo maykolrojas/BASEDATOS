@@ -5,7 +5,7 @@
     , Nombre varchar(50) not null 
     , PrimerApellido VARCHAR(50) NOT NULL
     , SegundoApellido VARCHAR(50) NOT NULL
-    , [edad] int not null
+    , [Edad] int not null
     , FechaNacimiento datetime not null
 )
 with (data_compression = page)

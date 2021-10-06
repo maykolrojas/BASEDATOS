@@ -67,6 +67,10 @@
     <Build Include="schema\exp.sql" />
     <Build Include="exp\tables\empleado.sql" />
     <Build Include="dbo\tables\Provincia.sql" />
+    <Build Include="exp\storeprodures\EmpleadoInsertar.sql" />
+    <Build Include="exp\storeprodures\EmpleadoActualizar.sql" />
+    <Build Include="exp\storeprodures\EmpleadoObtener.sql" />
+    <Build Include="exp\storeprodures\EmpleadoEliminar.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />

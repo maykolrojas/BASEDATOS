@@ -1,16 +1,18 @@
-﻿DROP TABLE IF EXISTS #ProvinciaTemp
-SELECT
-IdProvincia,NombreProvincia INTO #ProvienciaTemp
-FROM(
+﻿
+DROP TABLE IF EXISTS #ProvinciaTemp
+
+SELECT 
+IdProvincia, NombreProvincia INTO #ProvinciaTemp
+FROM (
 VALUES
-(1,'SAN JOSE'),
-(2,'ALAJUELA'),
-(3,'CARTAGO'),
-(4,'HEREDIA'),
-(5,'GUANACASTE'),
-(6,'PUNTARENAS'),
-(7,'LIMON'),
-) AS TEMP (IdProvincia, NombreProvincia)
+(1, 'SAN JOSÉ'),
+(2, 'ALAJUELA'),
+(3, 'CARTAGO'),
+(4, 'HEREDIA'),
+(5, 'GUANACASTE'),
+(6, 'PUNTARENAS'),
+(7, 'LIMON')
+)AS TEMP (IdProvincia, NombreProvincia)
 
 
 ----- ACTUALIZAR DATOS
@@ -26,7 +28,7 @@ VALUES
  SET IDENTITY_INSERT dbo.Provincia ON
 
  INSERT INTO dbo.Provincia(
- IdProvincia, NombreProvincia
+ IdProvincia, NombreProvincia)
 SELECT
 IdProvincia, NombreProvincia
 FROM #ProvinciaTemp

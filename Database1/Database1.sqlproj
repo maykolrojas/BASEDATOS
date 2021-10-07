@@ -71,6 +71,8 @@
     <Build Include="exp\storeprodures\EmpleadoActualizar.sql" />
     <Build Include="exp\storeprodures\EmpleadoObtener.sql" />
     <Build Include="exp\storeprodures\EmpleadoEliminar.sql" />
+    <Build Include="dbo\tables\Canton.sql" />
+    <Build Include="dbo\tables\Distrito.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />
